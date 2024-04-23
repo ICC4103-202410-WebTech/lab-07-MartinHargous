@@ -60,5 +60,5 @@ Post.find_by(title: "Post 1").tags
 3. Find all users that have a post with the tag "Tag 1".
 
 ```ruby
-User.joins(posts: :tags).where(tags: { name: "Tag 1" })
+User.joins(posts: :tags).where(tags: { name: "Tag 1" }).distinct
 ```

@@ -127,15 +127,20 @@ t2 = Tag.create!(
 t3 = Tag.create!(
     name: "Tag 1"
 )
-
+t4 = Tag.create!(
+    name: "Tag 2"
+)
+t5 = Tag.create!(
+    name: "Super original Tag"
+)
 p1.tags << t1
 p1.tags << t2
 p2.tags << t2
 p3.tags << t3
-p4.tags << t1
-p5.tags << t2
-p6.tags << t3
-p7.tags << t1
-p8.tags << t2
-p9.tags << t3
-p10.tags << t1
+p4.tags << t4
+p5.tags << t5
+p6.tags << t1
+p7.tags << t3
+p8.tags << t3
+p9.tags << t4
+p10.tags << t5
