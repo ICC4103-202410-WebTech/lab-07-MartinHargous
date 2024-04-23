@@ -80,7 +80,6 @@ p5 = Post.create!(
 p6 = Post.create!(
     title: 'What a weird social media',
     content: 'After five minutes all I have found is weird videogame dialogs!',
-    user_id: 1,
     published_at: '2024-04-08 10:20:30',
     answers_count: 987565,
     likes_count: 0,
@@ -89,7 +88,6 @@ p6 = Post.create!(
 p7 = Post.create!(
     title: 'Anyone want to play War thunder?',
     content: 'If you want to play war thunder send me a dm!',
-    user_id: 2,
     published_at: '2023-08-17 09:30:18',
     answers_count: 875,
     likes_count: 87,
@@ -98,7 +96,6 @@ p7 = Post.create!(
 p8 = Post.create!(
     title: 'Why my pc keeps crashing when i play a AoE2 ranked?',
     content: 'please help me i dont know what to do!!! the drivers are all up to date..',
-    user_id: 3,
     published_at: '2023-12-10 17:13:59',
     answers_count: 371,
     likes_count: 11,
@@ -107,7 +104,6 @@ p8 = Post.create!(
 p9 = Post.create!(
     title: 'Is Mikaeli stuck in a time loop?',
     content: 'Why is always Mikaeli happy of winning a photograph of motor car, since property is theft so he should be under arrest',
-    user_id: 4,
     published_at: '2024-01-05 07:25:50',
     answers_count: 821,
     likes_count: 3035,
@@ -116,7 +112,6 @@ p9 = Post.create!(
 p10 = Post.create!(
     title: 'Another day...',
     content: 'Still looking for something interesting to do. Any suggestions?',
-    user_id: 5,
     published_at: '2023-07-13 09:22:15',
     answers_count: 1,
     likes_count: 0,
@@ -134,6 +129,7 @@ t3 = Tag.create!(
 )
 
 p1.tags << t1
+p1.tags << t2
 p2.tags << t2
 p3.tags << t3
 p4.tags << t1
