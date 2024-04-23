@@ -1,6 +1,6 @@
-class CreateTagsPostTable < ActiveRecord::Migration[7.1]
+class AddTablePostTags < ActiveRecord::Migration[7.1]
   def change
-    create_table :tags_post_tables do |t|
+    create_table :post_tags do |t|
       t.belongs_to :tag
       t.belongs_to :post
       t.timestamps

@@ -37,7 +37,7 @@ user_5 = User.create!(
     )
 
 
-Post.create!(
+p1 = Post.create!(
     title: 'Hi this is my first Yweet',
     content: 'I am happy to be here!!',
     published_at: '2024-04-08 10:15:30',
@@ -45,7 +45,7 @@ Post.create!(
     likes_count: 0,
     user:user_1
     )
-Post.create!(
+p2 = Post.create!(
     title: 'Attack the D Point',
     content: 'Gramercy!',
     published_at: '2022-11-20 08:45:12',
@@ -53,7 +53,7 @@ Post.create!(
     likes_count: 9679452,
     user:user_2
     )
-Post.create!(
+p3 = Post.create!(
     title: 'Amormindu?',
     content: 'Wololo!! Talar? Cortar Madeira!',
     published_at: '2022-06-12 16:20:05',
@@ -61,7 +61,7 @@ Post.create!(
     likes_count: 912351,
     user:user_3
     )
-Post.create!(
+p4 = Post.create!(
     title: 'Mikaeli, you successfully hit metal 17 times, so you are now proud owner of this photograph of motorcar',
     content: 'I am Happy',
     published_at: '2024-09-03 14:55:40',
@@ -69,7 +69,7 @@ Post.create!(
     likes_count: 24,
     user:user_4
     )
-Post.create!(
+p5 = Post.create!(
     title: 'I am bored...',
     content: 'I dont know what to do... any good movies or tv shows to watch??',
     published_at: '2023-07-12 18:37:49',
@@ -77,7 +77,7 @@ Post.create!(
     likes_count: 21,
     user:user_5
     )
-Post.create!(
+p6 = Post.create!(
     title: 'What a weird social media',
     content: 'After five minutes all I have found is weird videogame dialogs!',
     user_id: 1,
@@ -86,7 +86,7 @@ Post.create!(
     likes_count: 0,
     user:user_1
     )    
-Post.create!(
+p7 = Post.create!(
     title: 'Anyone want to play War thunder?',
     content: 'If you want to play war thunder send me a dm!',
     user_id: 2,
@@ -95,7 +95,7 @@ Post.create!(
     likes_count: 87,
     user:user_2
     )   
-Post.create!(
+p8 = Post.create!(
     title: 'Why my pc keeps crashing when i play a AoE2 ranked?',
     content: 'please help me i dont know what to do!!! the drivers are all up to date..',
     user_id: 3,
@@ -104,7 +104,7 @@ Post.create!(
     likes_count: 11,
     user:user_3
     )  
-Post.create!(
+p9 = Post.create!(
     title: 'Is Mikaeli stuck in a time loop?',
     content: 'Why is always Mikaeli happy of winning a photograph of motor car, since property is theft so he should be under arrest',
     user_id: 4,
@@ -113,7 +113,7 @@ Post.create!(
     likes_count: 3035,
     user:user_4
     )         
-Post.create!(
+p10 = Post.create!(
     title: 'Another day...',
     content: 'Still looking for something interesting to do. Any suggestions?',
     user_id: 5,
@@ -122,3 +122,12 @@ Post.create!(
     likes_count: 0,
     user:user_5   
     )    
+
+t1 = Tag.create!(
+    name: "games"
+)
+t2 = Tag.create!(
+    name: "memes"
+)
+
+p1.tags << t1
