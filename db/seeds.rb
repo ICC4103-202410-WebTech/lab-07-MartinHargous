@@ -9,7 +9,7 @@
 #   end
 Post.delete_all
 User.delete_all
-
+Tag.delete_all
 user_1 = User.create!(
     email: 'jhondoe@example.com',
     name: 'John Doe',
@@ -38,7 +38,7 @@ user_5 = User.create!(
 
 
 p1 = Post.create!(
-    title: 'Hi this is my first Yweet',
+    title: 'Post 1',
     content: 'I am happy to be here!!',
     published_at: '2024-04-08 10:15:30',
     answers_count: 35,
@@ -129,5 +129,17 @@ t1 = Tag.create!(
 t2 = Tag.create!(
     name: "memes"
 )
+t3 = Tag.create!(
+    name: "Tag 1"
+)
 
 p1.tags << t1
+p2.tags << t2
+p3.tags << t3
+p4.tags << t1
+p5.tags << t2
+p6.tags << t3
+p7.tags << t1
+p8.tags << t2
+p9.tags << t3
+p10.tags << t1
